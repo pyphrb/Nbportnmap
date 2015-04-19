@@ -3,3 +3,4 @@
 2.只支持linux平台
 使用方式
 	1.python system.py
+	2
