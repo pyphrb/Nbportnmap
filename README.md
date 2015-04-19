@@ -6,4 +6,6 @@
 
 
 使用方式
-
+	
+	1.在ip_list.txt添加你的ip，暂不支持ip段的添加
+	python system.py,直接执行，扫描ip_list.txt里面的ip端口
