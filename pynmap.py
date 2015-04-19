@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+#-*-coding:utf8-*-
 from libnmap.process import NmapProcess
 import time, datetime
 import sys
