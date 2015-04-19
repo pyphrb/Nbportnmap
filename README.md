@@ -5,7 +5,7 @@
 2.只支持linux平台
 
 
-使用方式
+使用方式直接shell运行 python system.py
 	
 	1.在ip_list.txt添加你的ip，暂不支持ip段的添加
 	2.python system.py,直接执行，扫描ip_list.txt里面的ip端口
