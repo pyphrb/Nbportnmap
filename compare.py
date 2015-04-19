@@ -1,6 +1,6 @@
-﻿#!/usr/bin/env python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+#author:pyphrb
 from libnmap.parser import NmapParser
 #f = open('/root/libnmap/data.txt', 'w')
 def nested_obj(objname):
