@@ -24,7 +24,7 @@ threads = []
 #absTodayDateLog = os.path.abspath(todayDateLog)
 logging.basicConfig(level=logging.DEBUG,\
 	format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',\
-	datefmt='%a, %d %b %Y %H:%M:%S', filename= 'info.log',filemode='a')
+	datefmt='%a, %d %b %Y %H:%M:%S', filename= 'logs/info.log',filemode='a')
 class Mynmap(object):
 	'''nmap scan class '''
 	def __init__(self, scanIp):
