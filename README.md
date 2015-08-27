@@ -1,14 +1,13 @@
-#企业端口监控Nbportnmap
+from system import Mscan
 
-1.多线程调用nmap进行扫描，实现企业端口监控
+resultIpArray = Mscan.startNmapScan(ipList)
+�����ipList example : ['127.0.0.1']
+�����startNmapScan���ص���ip�˿� ���ص�list��ʽ���£�
 
-2.只支持linux平台
+['127.0.0.1 + NmapService: [open tcp <22> ssh product: OpenSSH version: 6.0p1 Debian 4+deb7u2 extrainfo: protocol 2.0 ostype: Linux]', '127.0.0.1 + NmapService: [open tcp <80> http product: nginx version: 1.2.4]', '127.0.0.1 + NmapService: [open tcp <9000> tcpwrapped]']
 
+from system import Mscan
 
-使用方式直接shell运行 python system.py
-	
-	1.在ip_list.txt添加你的ip，暂不支持ip段的添加
-	2.python system.py,直接执行，扫描ip_list.txt里面的ip端口
-	3.会在目录下生成日期的txt文件，该文件是端口改变的文件，以及参数改变
-----------------------------------------------------------------------------
-可以改造定时进行端口比对，实现端口监控
+Mscan.getHttp(resultIpArray)
+
+��������Ƿ���http web�ĺ��� ���ص�list ['http://127.0.0.1:80/']
