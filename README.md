@@ -1,3 +1,5 @@
+NBportnmap scan fuck the network port
+
 from system import Mscan
 
 resultIpArray = Mscan.startNmapScan(ipList)
